@@ -30,14 +30,17 @@ public class BibliotecaApp {
     }
 
     static void mostrarMenu() {
-        System.out.println("=== Biblioteca: Gestión de Préstamos ===");
-        System.out.println("1. Registrar nuevo préstamo");
-        System.out.println("2. Mostrar todos los préstamos");
-        System.out.println("3. Buscar préstamo por ID");
-        System.out.println("4. Actualizar un préstamo");
-        System.out.println("5. Eliminar un préstamo");
-        System.out.println("6. Calcular total de multas");
-        System.out.println("7. Salir");
+        System.out.println("┌─────────────────────────────────────────────┐");
+        System.out.println("│          Biblioteca: Gestión de Préstamos   │");
+        System.out.println("├─────────────────────────────────────────────┤");
+        System.out.println("│ 1. Registrar nuevo préstamo                 │");
+        System.out.println("│ 2. Mostrar todos los préstamos              │");
+        System.out.println("│ 3. Buscar préstamo por ID                   │");
+        System.out.println("│ 4. Actualizar un préstamo                   │");
+        System.out.println("│ 5. Eliminar un préstamo                     │");
+        System.out.println("│ 6. Calcular total de multas                 │");
+        System.out.println("│ 7. Salir                                    │");
+        System.out.println("└─────────────────────────────────────────────┘");
     }
 
     // ====== CRUD (por implementar) ======
