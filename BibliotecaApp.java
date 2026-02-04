@@ -48,7 +48,22 @@ public class BibliotecaApp {
     static void eliminarPrestamo() { /* TODO */ }
 
     // ====== Cálculo (por implementar) ======
-    static void calcularTotalMultas() { /* TODO */ }
+    static void calcularTotalMultas() {
+        if (prestamos.isEmpty()) {
+        System.out.println("No hay préstamos registrados.");
+        return;
+    }
+    
+    double totalMultas = 0;
+    for (ArrayList<Object> prestamo : prestamos) {
+        int diasPrestamo = (int) prestamo.get(3);
+        double multaPorDia = (double) prestamo.get(4);
+        totalMultas += diasPrestamo * multaPorDia;
+    }
+    
+    System.out.println("Total estimado de multas: $" + totalMultas);
+}
+      }
 
     // ====== Utilidades mínimas ======
     static int leerEntero(String msg) {
